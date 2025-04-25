@@ -8,6 +8,14 @@ Requires to install: **lora_diffusion** from https://github.com/cloneofsimo/lora
 pip install git+https://github.com/diixo/lora.git
 ```
 
+### 3D-rendering
+
+* 3D-rendering with **vgg19_conv.pth**: https://github.com/halfjoe/3D-Portrait-Stylization + **vgg_caffe.py** loader.
+
+Based on:
+* https://github.com/daniilidis-group/neural_renderer
+
+
 ### Dress-code dataset
 
 * Github official: https://github.com/aimagelab/dress-code
