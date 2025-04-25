@@ -3,6 +3,7 @@ from torch import nn
 import torch.nn.functional as F
 
 
+# https://github.com/halfjoe/3D-Portrait-Stylization/blob/main/texture_style_transfer/transfer/vgg_caffe.py
 def vgg_preprocess(tensor, vgg_normal_correct=False):
     if vgg_normal_correct:
         tensor = (tensor + 1) / 2
@@ -10,9 +11,9 @@ def vgg_preprocess(tensor, vgg_normal_correct=False):
     # output is BGR tensor which ranges in [0,255]
     tensor_bgr = torch.cat((tensor[:, 2:3, :, :], tensor[:, 1:2, :, :], tensor[:, 0:1, :, :]), dim=1)
     # tensor_bgr = tensor[:, [2, 1, 0], ...]
-    tensor_bgr_ml = tensor_bgr - torch.Tensor([0.40760392, 0.45795686, 0.48501961]).type_as(tensor_bgr).view(
-        1, 3, 1, 1
-    )
+    tensor_bgr_ml = tensor_bgr - torch.Tensor([0.40760392, 0.45795686, 0.48501961]
+        ).type_as(tensor_bgr).view(1, 3, 1, 1)
+
     tensor_rst = tensor_bgr_ml * 255
     return tensor_rst
 
