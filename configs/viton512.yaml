@@ -80,19 +80,19 @@ data:
           target: ldm.data.cp_dataset.CPDataset
           params:
               mode: train
-              dataroot: /mnt/pfs-mc0p4k/cvg/team/didonglin/why/datasets/Dresscode_upper_body_copy/
+              dataroot: /datasets/Dresscode_upper_body/
               image_size: 512
       validation:
           target: ldm.data.cp_dataset.CPDataset
           params:
               mode: test
-              dataroot: /mnt/pfs-mc0p4k/cvg/team/didonglin/why/datasets/Dresscode_upper_body_copy/
+              dataroot: /datasets/Dresscode_upper_body/
               image_size: 512
       test:
           target: ldm.data.cp_dataset.CPDataset
           params:
               mode: test
-              dataroot: /mnt/pfs-mc0p4k/cvg/team/didonglin/why/datasets/Dresscode_upper_body_copy/
+              dataroot: /datasets/Dresscode_upper_body/
               image_size: 512
 
 lightning:
