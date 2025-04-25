@@ -19,8 +19,6 @@ from ldm.data.base import Txt2ImgIterableBaseDataset
 from ldm.util import instantiate_from_config
 #from pytorch_lightning.plugins.environments import ClusterEnvironment, SLURMEnvironment
 
-from lora_diffusion.lora import save_lora_weight, inject_trainable_lora_extended
-
 from argparse_ext import TrainerExt
 from arguments import get_parser
 
@@ -156,6 +154,7 @@ class SetupCallback(Callback):
             print("Summoning checkpoint.")
             if hasattr(self.config, 'lora_config'):
                 ckpt_path = os.path.join(self.ckptdir, "lora_last.ckpt")
+                from lora_diffusion.lora import save_lora_weight
                 save_lora_weight(trainer.model, path=ckpt_path)
             else:
                 ckpt_path = os.path.join(self.ckptdir, "last.ckpt")
@@ -304,7 +303,7 @@ if __name__ == "__main__":
     if hasattr(config, 'lora_config'):
         model.eval()
         model._requires_grad = False
-
+        from lora_diffusion.lora import inject_trainable_lora_extended
         params, names = inject_trainable_lora_extended(model, r=config.lora_config.rank)
 
     # trainer and callbacks
