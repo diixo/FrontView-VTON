@@ -80,25 +80,24 @@ data:
           target: ldm.data.cp_dataset.CPDataset
           params:
               mode: train
-              dataroot: /datasets/Dresscode_upper_body/
+              dataroot: /datasets/VITON-HD/
               image_size: 512
       validation:
           target: ldm.data.cp_dataset.CPDataset
           params:
               mode: test
-              dataroot: /datasets/Dresscode_upper_body/
+              dataroot: /datasets/VITON-HD/
               image_size: 512
       test:
           target: ldm.data.cp_dataset.CPDataset
           params:
               mode: test
-              dataroot: /datasets/Dresscode_upper_body/
+              dataroot: /datasets/VITON-HD/
               image_size: 512
 
 lightning:
   trainer:
     max_epochs: 40
-    num_nodes: 1
-    accelerator: 'gpu'
-    gpus: "0,1"
+    devices: 1
+    accelerator: "cpu"
     accumulate_grad_batches: 2
