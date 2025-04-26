@@ -8,7 +8,10 @@ Requires to install: **lora_diffusion** from https://github.com/cloneofsimo/lora
 ```bash
 pip install git+https://github.com/diixo/lora.git
 pip install diffusers==0.20.0
+pip install huggingface_hub==0.25.1
 ```
+Do not use huggingface_hub>=0.26.0 to avoid import-error of 'cached_download' from 'huggingface_hub'
+
 
 ### 3D-rendering
 
@@ -28,6 +31,7 @@ Based on:
 
 * https://github.com/sergeywong/cp-vton
 * https://github.com/minar09/cp-vton-plus
+* https://github.com/sangyun884/HR-VITON
 * [OpenPose](https://github.com/Hzzone/pytorch-openpose)
 * [multimodal-garment-designer](https://github.com/aimagelab/multimodal-garment-designer)
 * [MF-VITON: High-Fidelity Mask-Free Virtual Try-On with Minimal Input](https://arxiv.org/abs/2503.08650)
