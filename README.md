@@ -10,9 +10,10 @@ pip install git+https://github.com/diixo/lora.git
 pip install diffusers==0.20.0
 pip install huggingface_hub==0.25.1
 
-pytorch-lightning==1.4.2
-torchmetrics==0.6.0
-omegaconf==2.1.1
+pip install pytorch-lightning==1.4.2
+pip install torchmetrics==0.6.0
+pip install omegaconf==2.1.1
+pip install einops==0.3.0
 ```
 Do not use huggingface_hub>=0.26.0 to avoid import-error of 'cached_download' from 'huggingface_hub'
 
