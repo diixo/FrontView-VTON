@@ -26,6 +26,8 @@ Based on:
 
 ## Knowledgments
 
+* https://github.com/sergeywong/cp-vton
+* https://github.com/minar09/cp-vton-plus
 * [OpenPose](https://github.com/Hzzone/pytorch-openpose)
 * [multimodal-garment-designer](https://github.com/aimagelab/multimodal-garment-designer)
 * [MF-VITON: High-Fidelity Mask-Free Virtual Try-On with Minimal Input](https://arxiv.org/abs/2503.08650)
