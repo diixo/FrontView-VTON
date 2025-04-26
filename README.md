@@ -7,6 +7,7 @@ Requires to install: **lora_diffusion** from https://github.com/cloneofsimo/lora
 
 ```bash
 pip install git+https://github.com/diixo/lora.git
+pip install diffusers==0.20.0
 ```
 
 ### 3D-rendering
