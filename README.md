@@ -14,6 +14,7 @@ pip install pytorch-lightning==1.4.2
 pip install torchmetrics==0.6.0
 pip install omegaconf==2.1.1
 pip install einops==0.3.0
+pip install taming-transformers==0.0.1
 ```
 Do not use huggingface_hub>=0.26.0 to avoid import-error of 'cached_download' from 'huggingface_hub'
 
