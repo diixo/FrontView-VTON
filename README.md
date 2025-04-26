@@ -1,7 +1,8 @@
 # FrontView-VTON
 
-Part-1 of MV-VTON
+Based on [DCI-VTON-Virtual-Try-On](https://github.com/bcmi/DCI-VTON-Virtual-Try-On). Part-1 of MV-VTON
 
+### Requirements
 Requires to install: **lora_diffusion** from https://github.com/cloneofsimo/lora
 
 ```bash
