@@ -3,4 +3,4 @@
 /.idea
 
 /datasets/VITON-HD
-
+*.pth
