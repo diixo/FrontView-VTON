@@ -1,6 +1,6 @@
 # FrontView-VTON
 
-Diffusion-based Conditional Inpainting for Virtual Try-ON, based on [DCI-VTON-Virtual-Try-On](https://github.com/bcmi/DCI-VTON-Virtual-Try-On). Step-1 of MV-VTON.
+Diffusion-based Conditional Inpainting for High-Quality Virtual Try-On of Diffusion model with Appearance Flow. Based on [DCI-VTON-Virtual-Try-On](https://github.com/bcmi/DCI-VTON-Virtual-Try-On). Step-1 of MV-VTON.
 
 ### Requirements
 Requires to install: **lora_diffusion** from https://github.com/cloneofsimo/lora
