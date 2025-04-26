@@ -29,3 +29,4 @@ Based on:
 * [OpenPose](https://github.com/Hzzone/pytorch-openpose)
 * [multimodal-garment-designer](https://github.com/aimagelab/multimodal-garment-designer)
 * [MF-VITON: High-Fidelity Mask-Free Virtual Try-On with Minimal Input](https://arxiv.org/abs/2503.08650)
+* [Improving Diffusion Models for Authentic Virtual Try-on in the Wild](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11626.pdf)
