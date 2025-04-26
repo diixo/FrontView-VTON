@@ -224,6 +224,13 @@ if __name__ == "__main__":
     parser = TrainerExt.add_argparse_args(parser)
 
     opt, unknown = parser.parse_known_args()
+    # opt, unknown = parser.parse_known_args([
+    #     "--logdir", "models/oc",
+    #     "--pretrained_model", "checkpoints/model.ckpt",
+    #     "--base", "configs/viton512.yaml",
+    #     "--scale_lr", "False"
+    # ])
+    # print(opt)
     if opt.name and opt.resume:
         raise ValueError(
             "-n/--name and -r/--resume cannot be specified both."
