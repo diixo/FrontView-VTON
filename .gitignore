@@ -4,3 +4,4 @@
 
 /datasets/VITON-HD
 *.pth
+*.ckpt
