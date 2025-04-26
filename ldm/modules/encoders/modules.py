@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 from functools import partial
-import clip
-from einops import rearrange, repeat
+#import clip
+#from einops import rearrange, repeat
 from transformers import CLIPTokenizer, CLIPTextModel, CLIPVisionModel, CLIPModel
 import kornia
 from ldm.modules.x_transformer import Encoder, \
@@ -143,7 +143,7 @@ class FrozenCLIPImageEmbedder(AbstractEncoder):
 
     def __init__(self, version="openai/clip-vit-large-patch14"):
         super().__init__()
-        self.transformer = CLIPVisionModel.from_pretrained('/mnt/pfs-mc0p4k/cvg/team/didonglin/why/my_huggingface/clip-vit-large-patch14/')
+        self.transformer = CLIPVisionModel.from_pretrained(version)
         self.final_ln = LayerNorm(1024)
         self.mapper = Transformer(
             1,
