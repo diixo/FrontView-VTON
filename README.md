@@ -33,11 +33,18 @@ Based on:
 * [Request form](https://forms.gle/72Bpeh48P7zQimin7) with [description](https://aimagelab.ing.unimore.it/imagelab/page.asp?IdPage=47)
 
 
+## Aknowledgments
+
+* https://github.com/sangyun884/HR-VITON
+* https://github.com/shadow2496/VITON-HD
+* https://github.com/rlawjdghek/StableVITON
+* https://github.com/rlawjdghek/PromptDresser
+
+
 ## Knowledgments
 
 * https://github.com/sergeywong/cp-vton
 * https://github.com/minar09/cp-vton-plus
-* https://github.com/sangyun884/HR-VITON
 * [OpenPose](https://github.com/Hzzone/pytorch-openpose)
 * [multimodal-garment-designer](https://github.com/aimagelab/multimodal-garment-designer)
 * [MF-VITON: High-Fidelity Mask-Free Virtual Try-On with Minimal Input](https://arxiv.org/abs/2503.08650)
